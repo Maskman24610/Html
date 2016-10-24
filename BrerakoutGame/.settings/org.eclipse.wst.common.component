@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="BrerakoutGame">
+    <wb-module deploy-name="BrerakoutGame完整">
         <wb-resource deploy-path="/" source-path="/WebContent"/>
-        <property name="context-root" value="BrerakoutGame"/>
+        <property name="context-root" value="BrerakoutGame完整"/>
     </wb-module>
 </project-modules>
