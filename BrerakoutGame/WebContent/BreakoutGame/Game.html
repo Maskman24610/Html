@@ -82,23 +82,32 @@
                     
             }
             if(type){
-                
+                 //Draw rectangle with fillStyle color selected eariler
+                 context.fillRect(x*brickWidth,y*brickHeight,brickWidth,
+                		 brickHeight);
+                 //Also draw blackish border around brick
+                 context.strokeRect(x*brickWidth+1,y*brickHeight+1,
+                		 brickWidth-2,brickHeight-2);
             }
         }
-
-        //     if (type) {
-        //         //Draw rectangle with fillStyle color selected earlier
-        //         context.fillRect(x * brickWidth, y * brickHeight, brickWidth,
-        //                 brickHeight);
-        //         // Also draw blackish border around the brick
-        //         context.strokeRect(x * brickWidth + 1, y * brickHeight + 1,
-        //                 brickWidth - 2, brickHeight - 2);
-        //     }
-        // }
         
-        // createBricks();
+        createBricks();
         
+        var score=0;
         
+        function displayScoreBoard(){
+        	//Set the text font and color
+        	context.fillStyle="rgb(50,100,50)";
+        	context.font="20px Time New Roman";
+        	
+        	//Clean the bottom 30 pixels of the canvas 
+        	context.clearRect(0,canvas.height-30,canvas.width,30);
+        	//Write Text 5 pixels from the bottom of the canvas
+        	context.fillText('Score:'+ score,10,canvas.height-5);
+        }
+        
+        displayScoreBoard();
+ 
     });
     </script>
     
